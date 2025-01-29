@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.site__form{
+    width: 440px;
+margin: 200px  auto;
+}
+.form__span{
+    display: inline-block;
+    width: 340px;
+    height: 150px;
+    background-color: darkgray;
+    border-radius: 80px;
+    position: relative;
+    transition-duration: 1s;
+
+}
+.form__inp{
+    display: none;
+}
+
+.form__span::before{
+    position: absolute;
+    display: inline-block;
+    width: 140px;
+    height: 130px;
+    top: 10px;
+    left: 10px;
+    background-color:white;
+    border-radius: 50%;
+    transition-duration: 1s;
+    content: "";
+}
+.form__inp:checked + .form__span::before{
+    left: 190px;
+    background-color:darkgray;
+}
+.form__inp:checked + .form__span{
+    background-color:black;
+}
+.hero__form{
+    width: 440px;
+    margin: 440px auto;
+}
+.hero__span{
+    display: inline-block;
+    width: 440px;
+    height: 180px;
+   background-image: url("./images/sunbacround.jpeg");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+    border-radius: 100px;
+    position: relative;
+    transition-duration: 1s;
+}
+.hero__inp{
+    display: none;
+}
+.hero__span::before{
+    display: inline-block;
+    width: 180px;
+    height: 160px;
+    background-image: url("./images/sun.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    top: 10px;
+    left: 15px;
+    position: absolute;
+    border-radius: 50%;
+    transition-duration: 1s;
+    content: "";
+}
+.hero__inp:checked + .hero__span::before{
+    left: 245px;
+   background-image: url("./images/moon.jpeg");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   
+}
+.hero__inp:checked + .hero__span{
+    background-image: url("./images/moonbacround.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
