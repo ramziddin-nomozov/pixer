@@ -12,7 +12,7 @@ margin: 200px  auto;
     display: inline-block;
     width: 340px;
     height: 150px;
-    background-color: darkgray;
+    background-color:black;
     border-radius: 80px;
     position: relative;
     transition-duration: 1s;
@@ -29,19 +29,23 @@ margin: 200px  auto;
     height: 130px;
     top: 10px;
     left: 10px;
-    background-color:white;
+    background-color:orange;
     border-radius: 50%;
     transition-duration: 1s;
     content: "";
 }
 .form__inp:checked + .form__span::before{
     left: 190px;
-    background-color:darkgray;
+    background-color:white;
 }
 .form__inp:checked + .form__span{
-    background-color:black;
+    background-color:green;
 }
-.hero__form{
+.hero__desk{
+    width: 1000px;
+    text-align: center;
+}
+/* .hero__form{
     width: 440px;
     margin: 440px auto;
 }
@@ -88,4 +92,4 @@ margin: 200px  auto;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-}
+} */
